@@ -1,7 +1,7 @@
 
 ![ContractWallet](https://user-images.githubusercontent.com/78970916/162003299-d1e41190-a032-45a5-9525-0f3bf353892c.png)
 
-This smart contract allows you to create wallets in contract accounts. You can receive money in to your contract wallet and you can send money from your contract wallet.
+This smart contract allows you to create wallets with contract accounts. You can receive and send your money and also you can check your wallet balance.
 
 * The owner of the wallet can only check balance and send money from account.
 * Every EOA can have only one contract wallet.
