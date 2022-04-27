@@ -1,5 +1,5 @@
-var CreateWallet = artifacts.require("./contracts/Wallet.sol");
+var Wallet = artifacts.require("./contracts/Wallet.sol");
 
 module.exports = function(deployer) {
-	deployer.deploy(CreateWallet);
+	deployer.deploy(Wallet);
 };
