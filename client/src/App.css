@@ -1,22 +1,75 @@
-.App {
-  text-align: center;
+p {
+  font-family: century-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.space {
+  width: 8px;
+  height: auto;
+  display: inline-block;
+}
+.spaceEth {
+  width: 8px;
+  height: auto;
+  display: inline-block;
+}
+.spaceTop {
+  width: 8px;
+  height: 150px;
+  display: inline-block;
+}
+.spaceDown {
+  width: 8px;
+  height: 300px;
+  display: inline-block;
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: century-gothic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #2F2F2F;
+  color: rgb(207, 207, 207);
+}
+.aws-btn {
+
+--button-default-height: 48px;
+--button-default-font-size: 14px;
+--button-default-border-radius: 6px;
+--button-horizontal-padding: 20px;
+--button-raise-level: 5px;
+--button-hover-pressure: 2;
+--transform-speed: 0.185s;
+--button-primary-color: #475472;
+--button-primary-color-dark: #2a3143;
+--button-primary-color-light: #d4d9e4;
+--button-primary-color-hover: #424e6a;
+--button-primary-border: none;
+--button-secondary-color: #fffc6c;
+--button-secondary-color-dark: #b9b500;
+--button-secondary-color-light: #6c6a00;
+--button-secondary-color-hover: #fffb3e;
+--button-secondary-border: none;
+--button-anchor-color: #f3c8ad;
+--button-anchor-color-dark: #734922;
+--button-anchor-color-light: #4c3016;
+--button-anchor-color-hover: #f1bfa0;
+--button-anchor-border: 1px solid #8c633c;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home,
+.how-to-use, {
   display: flex;
-  flex-direction: column;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+  font-size: 3rem;
 }
