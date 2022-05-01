@@ -3,6 +3,27 @@ p {
   font-weight: 400;
   font-style: normal;
 }
+.c1{
+  width: %50;
+  height: 150px;
+  display: inline-block;
+}
+.c2{
+  width :%50;
+  height: 150px;
+  display: inline-block;
+}
+#id1::placeholder {
+    color: #fcfcfc;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 .space {
   width: 8px;
   height: auto;

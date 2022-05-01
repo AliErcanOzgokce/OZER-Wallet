@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.8",
     "ganache-cli": "^6.12.2",
     "web3": "^1.7.3"
   }

@@ -1,0 +1,26 @@
+.SA {
+    position: relative;
+    height: 750px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.space {
+  width: 8px;
+  height: auto;
+  display: inline-block;
+}
+.spaceEths {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+}
+.spaceTops {
+  width: 8px;
+  height: 250px;
+  display: inline-block;
+}
+.spaceDown {
+  width: 8px;
+  height: 300px;
+  display: inline-block;
+}
