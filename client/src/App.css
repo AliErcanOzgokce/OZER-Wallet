@@ -3,6 +3,11 @@ p {
   font-weight: 400;
   font-style: normal;
 }
+.howTo{
+  padding-left: 150px;
+  padding-right: 150px;
+  line-height: 1.8;
+}
 .c1{
   width: %50;
   height: 150px;
@@ -28,6 +33,9 @@ input[type="number"] {
   width: 8px;
   height: auto;
   display: inline-block;
+}
+.spaceImg {
+  height: 20px;
 }
 .spaceEth {
   width: 8px;
