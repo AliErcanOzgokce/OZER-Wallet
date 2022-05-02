@@ -52,14 +52,15 @@ class Home extends Component {
   walletInfo = async () => {
     const { accounts, contract } = this.state;
 
+    // Getting Wallet Address
     const _walletAddress = await contract.methods
       .walletAddr()
       .call({ from: accounts[0] });
-
+    // Getting Wallet Owner Address
     const _walletOwner = await contract.methods
       .owner()
       .call({ from: accounts[0] });
-
+    // Getting Wallet Balance
     const _walletBalance = await contract.methods
       .checkBalance()
       .call({ from: accounts[0] });
@@ -72,11 +73,11 @@ class Home extends Component {
   };
   render() {
     if (!this.state.web3) {
-        if(window.location.hash !== "#2") {
+      if (window.location.hash !== "#2") {
         window.location.href += "#2";
         window.location.reload(false);
-        }
-      return (<div>Loading Web3, accounts, and contract...</div>);
+      }
+      return <div>Loading Web3, accounts, and contract...</div>;
     }
     return (
       <>

@@ -57,14 +57,15 @@ class SendAddMoney extends Component {
   walletInfo = async () => {
     const { accounts, contract } = this.state;
 
+    // Getting Wallet Address
     const _walletAddress = await contract.methods
       .walletAddr()
       .call({ from: accounts[0] });
-
+    // Getting Wallet Owner Address
     const _walletOwner = await contract.methods
       .owner()
       .call({ from: accounts[0] });
-
+    // Getting Wallet Balance
     const _walletBalance = await contract.methods
       .checkBalance()
       .call({ from: accounts[0] });
@@ -81,6 +82,7 @@ class SendAddMoney extends Component {
     this.setState({ loading: true });
     try {
       const { accounts, contract, sendAmount, receiverAdrr, web3 } = this.state;
+      // Send Money From Account
       await contract.methods
         .sendMoney(receiverAdrr, web3.utils.toWei(sendAmount, "ether"))
         .send({ from: accounts[0] });
@@ -95,6 +97,7 @@ class SendAddMoney extends Component {
     this.setState({ loading: true });
     try {
       const { accounts, contract, addAmount, web3 } = this.state;
+      // Add Money to the Account
       await contract.methods.addMoney().send({
         from: accounts[0],
         value: web3.utils.toWei(addAmount, "ether"),
@@ -165,16 +168,15 @@ class SendAddMoney extends Component {
                   </div>
                   <AwesomeButtonProgress
                     action={(element, next) => {
-                      action("clicked");
+                      console.log("clicked");
                       setTimeout(() => {
                         next();
-                      }, 600);
+                      }, 15000);
                     }}
                     type="primary"
                   >
                     Add Money
                   </AwesomeButtonProgress>
-                  ;
                 </form>
               </center>
               <center>
@@ -226,7 +228,12 @@ class SendAddMoney extends Component {
                     />
                   </Input>
                   <AwesomeButtonProgress
-                    action={this.state.loading}
+                    action={(element, next) => {
+                      console.log("clicked");
+                      setTimeout(() => {
+                        next();
+                      }, 15000);
+                    }}
                     type="secondary"
                   >
                     Send Money
