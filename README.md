@@ -16,6 +16,13 @@ First, add the mnemonic of your account. Then the network name and the id. Final
 
 ![carbon](https://user-images.githubusercontent.com/78970916/166266569-1154c2d7-d5ef-468a-92d5-9586c1a86453.png)
 
+For starting the Dapp:
+
+
+```
+cd client && npm start
+```
+
 
 ## Usage
 
